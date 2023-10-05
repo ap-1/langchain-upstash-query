@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"strict": true,
+		"lib": ["esnext"],
+		"types": ["@cloudflare/workers-types", "node"],
+		"jsx": "react",
+		"jsxFactory": "Html.createElement",
+		"jsxFragmentFactory": "Html.Fragment",
+		"plugins": [{ "name": "@kitajs/ts-html-plugin" }]
+	}
+}

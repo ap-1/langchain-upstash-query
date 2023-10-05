@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "uno": "unocss **.tsx --preflights --minify --out-file static/uno.css",
+    "dev": "wrangler dev src/index.tsx",
+    "deploy": "wrangler deploy --minify src/index.tsx"
+  },
+  "dependencies": {
+    "@kitajs/html": "^3.0.0",
+    "@kitajs/ts-html-plugin": "^1.2.0",
+    "@upstash/query": "^0.0.1",
+    "@upstash/redis": "^1.22.1",
+    "hono": "^3.7.2",
+    "langchain": "^0.0.158",
+    "openai": "^4.11.1",
+    "zod": "^3.22.3",
+    "zod-to-json-schema": "^3.21.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230914.0",
+    "unocss": "^0.56.5",
+    "wrangler": "^3.9.0"
+  }
+}
